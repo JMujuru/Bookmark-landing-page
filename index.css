@@ -1,0 +1,301 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft Blue: hsl(231, 69%, 60%)
+- Soft Red: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(229, 8%, 60%)
+- Very Dark Blue: hsl(229, 31%, 21%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500
+
+## Icons
+
+For the icons in the design, you can choose between using the icons provided or an font icon library.
+
+Some library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* Universal  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;;
+}
+
+p {
+  color: hsl(229, 8%, 60%);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 30px 60px 30px;
+}
+
+/* Bookmark Manager */
+
+.bookmarkManger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30%;
+}
+
+.bookmarkManger img {
+  width: 95%;
+  margin-bottom: 50px;
+}
+.bookmarkManger h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bookmarkManger p {
+  text-align: center;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
+}
+
+
+  .btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 500;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.bookmarkBtn .btn:first-child {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;;
+}
+
+
+/* Features */
+
+.features  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.features > p:first-of-type {
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.highlighted-tiltes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 20%;
+}
+
+.feat-p {
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+.feat-p:hover{
+  border-bottom: 5px hsl(0, 94%, 66%) solid;
+  border-bottom-width: auto;
+  cursor: pointer;
+} 
+
+.feat-p:active{
+  border-bottom: 5px hsl(0, 94%, 66%) solid;
+  border-bottom-width: auto;
+  cursor: pointer;
+} 
+
+.highlighted-tiltes div:first-child {
+  border-top: solid hsla(229, 8%, 60%, 0.349) 1px; 
+} 
+.highlighted-tiltes div {
+  border-bottom: solid hsla(229, 8%, 60%, 0.349)  1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.features > div img {
+  width: 85%;
+  margin-bottom: 20%;
+}
+
+
+.features > div h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.features > div h3 + p {
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.tb  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35%;
+}
+
+
+.simpleBookmarking {
+  display: flex;
+}
+
+
+.speedysearch  {
+  display: none;
+}
+
+.easyshare {
+  display: none;
+}
+
+/* Extentions  */
+
+.extensions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.extensions > h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.extensions > p {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px hsla(229, 8%, 60%, 0.5) ;
+}
+
+.card > img:first-of-type {
+  margin: 35px 0;
+}
+.card h3  {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.card p {
+  margin-bottom: 40px;
+}
+
+.card > img:last-of-type{
+  margin-bottom: 20px;
+}
+.card button {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+
+
+/* Frequently Asked  */
+
+.frequently-asked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frequently-asked > h2 {
+  font-weight: 500;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.frequently-asked > p {
+  text-align: center;
+  padding: 0  30px;
+  margin-bottom: 16%;
+}
+
+
+/* Stay-updated-form */
+
+
+
+
+
+
+/* Footer */
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
