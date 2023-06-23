@@ -66,6 +66,18 @@ header {
 
 /* Bookmark Manager */
 
+.background-color{
+  height: 23vh;
+  background-color: hsl(231, 69%, 60%);
+  width: 90%;
+  border-radius: 0 0 0 115px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 24%;
+}
+
+
 .bookmarkManger {
   display: flex;
   flex-direction: column;
@@ -74,9 +86,16 @@ header {
   margin-bottom: 30%;
 }
 
+/* .bookmarkManger > div {
+  background: hsl(228, 45%, 44%);
+} */
+
+
 .bookmarkManger img {
-  width: 95%;
+  width: 100%;
   margin-bottom: 50px;
+  position: relative;
+
 }
 .bookmarkManger h1 {
   font-size: 2rem;
@@ -116,6 +135,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .features h2 {
@@ -177,11 +197,40 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.features > div h3 + p {
+.features > div {
   text-align: center;
   padding: 0 20px;
   line-height: 1.6;
 }
+
+.background-colorR {
+  height: 23vh;
+  background-color: hsl(231, 69%, 60%);
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+  bottom: 33%;
+  border-radius: 0 0 115px 0;
+  left: -21%;
+ 
+ }
+
+.small-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+/* 
+  height: 25vh;
+  background-color: hsl(231, 69%, 60%);
+  width: 90%;
+  border-radius: 0 0 0 115px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 24%;
+
+*/
 
 .tb  {
   display: flex;
@@ -230,7 +279,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 8px 12px hsla(229, 8%, 60%, 0.5) ;
@@ -359,17 +408,92 @@ header {
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
+}
+
+
+
+
+#emailForm > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+
+}
+
+
+#emailForm > div:last-of-type {
+margin-bottom: 10%;
+}
+
+
+
+#incorrectEmail {
+  font-size: 0.5rem;
+  display: none;
+  background-color: hsl(0, 94%, 66%);
+  padding: 5px 0px;
+  width: 86%;
+  border-radius: 0px 0px 5px 5px;
 }
 
 input[type="email"] {
-  width: 70%;
-  padding: 8px;
+  width: 80%;
+  padding: 12px 10px;
   font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  /* border: hsl(0, 94%, 66%) 2px solid; */
+}
 
+input[type="submit"] {
+  background-color: hsl(0, 94%, 66%);
+  color: #fff;
+  font-weight: 500;
+  width: 86%;
+  margin: 0;
 }
 
 
 /* Footer */
+
+footer {
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+footer > div:first-of-type{
+  padding-top: 10%;
+  margin-bottom: 5%;
+}
+
+footer > p {
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  color: #ffffffa4;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+}
+
+footer > p:last-of-type {
+  margin-bottom: 10%;
+}
+
+.socials {
+display: flex;
+width: 50%;
+justify-content: space-evenly;
+margin-bottom: 10%;
+
+}
 
 .attribution {
   display: none;
