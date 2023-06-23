@@ -260,11 +260,15 @@ header {
 
 /* Frequently Asked  */
 
+
+
+
 .frequently-asked {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30%;
 }
 
 .frequently-asked > h2 {
@@ -316,11 +320,53 @@ header {
 .dropdown > img  {
   height: 11px;
 }
+
+.frequently-asked > .faq-container:last-of-type {
+  margin-bottom: 10%;
+}
+.frequently-asked > button {
+  background-color: hsl(231, 69%, 60%);
+  color:#fff;
+}
+
 /* Stay-updated-form */
 
+.form-container {
+  background-color: hsl(231, 69%, 60%);
+  padding-top: 18%;
+}
+/* .form-container > div {
+  margin-top: 30%;
+  background-color: hsl(231, 69%, 60%)
+} */
+.form-container p{
+ letter-spacing: 3px;
+ font-size: 0.8rem;
+ text-align: center;
+ margin-bottom: 3%;
+}
+.form-container h3 {
+ text-align: center;
+ padding: 0 50px;
+ font-weight: 500;
+ margin-bottom: 10%;
+}
+.form-container p, h3 {
+  color: #fff;
+}
 
+#emailForm {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+input[type="email"] {
+  width: 70%;
+  padding: 8px;
+  font-size: 14px;
 
+}
 
 
 /* Footer */
