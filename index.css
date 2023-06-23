@@ -281,6 +281,41 @@ header {
 }
 
 
+.faq-container {
+  /* border: solid black 1px; */
+  width: 80%;
+}
+
+.faq-container div + p {
+  padding: 0 20px;
+  line-height: 2;
+  font-size: 0.9rem;
+  display: none;
+}
+
+
+
+
+.dropdown {
+  border-bottom: solid 1px hsla(229, 8%, 60%, 0.5);
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown > p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.dropdown > button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.dropdown > img  {
+  height: 11px;
+}
 /* Stay-updated-form */
 
 
