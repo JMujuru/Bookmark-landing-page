@@ -8,10 +8,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Bookmark landing page</title>
-
-  <style>
-
-  </style>
 </head>
 
 <body>
@@ -19,18 +15,29 @@
     <header>
       <img class="logo-head" src="images/logo-bookmark.svg">
       <img class="logo-head" src="images/icon-hamburger.svg">
+      <nav>
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+          <li><button>Login</button></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="bookmarkManger">
         <div class="background-color"></div>
         <img src="images/illustration-hero.svg">
-        <h1>A Simple Bookmark Manager</h1>
-        <p>A clean and simple interface to organize your favourite
-          websites. Open a new browser tab and see your sites load instantly.Try it for free.
-        </p>
-        <div class="bookmarkBtn">
-          <button class="btn">Get it on Chrome</button>
-          <button class="btn">Get it on Firefox</button>
+        <div class="bookmark-manager-container">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite
+            websites. Open a new browser tab and see your sites load instantly.Try it for free.
+          </p>
+
+          <div class="bookmarkBtn">
+            <button class="btn">Get it on Chrome</button>
+            <button class="btn">Get it on Firefox</button>
+          </div>
         </div>
       </section>
       <section class="features">
@@ -52,28 +59,37 @@
         <div class="background-colorR"></div>
         <div class="simpleBookmarking tb" id="">
           <img src="images/illustration-features-tab-1.svg">
-          <h3>Simple Bookmarking</h3>
-          <p class="small-heading">Bookmark in one click</p>
-          <p>Organize your bookmark however you like. Our simple drag-and-drop interface gives you complete
-            control over how you manage your favourite sites.
-          </p>
+          <div class="features-container">
+            <h3>Simple Bookmarking</h3>
+            <p class="small-heading">Bookmark in one click</p>
+            <p>Organize your bookmark however you like. Our simple drag-and-drop interface gives you complete
+              control over how you manage your favourite sites.
+            </p>
+            <button class="btn features-button">More Info</button>
+          </div>
         </div>
         <div class="speedysearch tb" id="">
           <img src="images/illustration-features-tab-2.svg">
-          <h3>Speedy Searching</h3>
-          <p class="small-heading">Intelligent search</p>
-          <p>Our powerful search feature will help you find saved sites in no time at all.
-            No need to trawl through all of your bookmarks.
-          </p>
+          <div class="features-container">
+            <h3>Speedy Searching</h3>
+            <p class="small-heading">Intelligent search</p>
+            <p>Our powerful search feature will help you find saved sites in no time at all.
+              No need to trawl through all of your bookmarks.
+            </p>
+            <button class="btn features-button">More Info</button>
+          </div>
         </div>
         <div class="easyshare tb" id="">
           <img src="images/illustration-features-tab-3.svg">
-          <h3>Easy Sharing</h3>
-          <p class="small-heading">Share your bookmarks</p>
-          <p>
-            Easily share your bookmark and collections with others. Create a shareable link that you can
-            send at the click of a button.
-          </p>
+          <div class="features-container">
+            <h3>Easy Sharing</h3>
+            <p class="small-heading">Share your bookmarks</p>
+            <p>
+              Easily share your bookmark and collections with others. Create a shareable link that you can
+              send at the click of a button.
+            </p>
+            <button class="btn features-button">More Info</button>
+          </div>
         </div>
 
       </section>
@@ -89,14 +105,14 @@
             <img src="images/bg-dots.svg">
             <button class="btn">Add & Install Extension</button>
           </div>
-          <div class="card">
+          <div class="card cd1">
             <img src="images/logo-firefox.svg">
             <h3>Add to Firefox</h3>
             <p>Minimum version 55</p>
             <img src="images/bg-dots.svg">
             <button class="btn">Add & Install Extension</button>
           </div>
-          <div class="card">
+          <div class="card cd2">
             <img src="images/logo-opera.svg">
             <h3>Add to Opera</h3>
             <p>Minimum version 46</p>
@@ -139,7 +155,7 @@
         <div class="faq-container">
           <div class="dropdown">
             <p>What about other Chromium browsers?</p>
-              <button><img src="images/icon-arrow.svg"></button>
+            <button><img src="images/icon-arrow.svg"></button>
           </div>
           <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
             vitae neque eget nisl gravida pellentesque non ut velit.</p>

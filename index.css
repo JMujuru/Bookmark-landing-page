@@ -42,13 +42,13 @@ Some library suggestions can be found below:
 - [Ionicons](https://ionicons.com)
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 /* Universal  */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', sans-serif;;
+  font-family: "Rubik", sans-serif;
 }
 
 p {
@@ -56,7 +56,9 @@ p {
 }
 
 /* Header */
-
+nav {
+  display: none;
+}
 header {
   display: flex;
   align-items: center;
@@ -66,7 +68,7 @@ header {
 
 /* Bookmark Manager */
 
-.background-color{
+.background-color {
   height: 23vh;
   background-color: hsl(231, 69%, 60%);
   width: 90%;
@@ -77,7 +79,6 @@ header {
   top: 24%;
 }
 
-
 .bookmarkManger {
   display: flex;
   flex-direction: column;
@@ -86,16 +87,20 @@ header {
   margin-bottom: 30%;
 }
 
+.bookmark-manager-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* .bookmarkManger > div {
   background: hsl(228, 45%, 44%);
 } */
 
-
 .bookmarkManger img {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 25%;
   position: relative;
-
 }
 .bookmarkManger h1 {
   font-size: 2rem;
@@ -112,8 +117,7 @@ header {
   line-height: 1.6;
 }
 
-
-  .btn {
+.btn {
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
@@ -124,13 +128,12 @@ header {
 
 .bookmarkBtn .btn:first-child {
   background-color: hsl(231, 69%, 60%);
-  color: #fff;;
+  color: #fff;
 }
-
 
 /* Features */
 
-.features  {
+.features {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,23 +166,23 @@ header {
   font-size: 1.2rem;
 }
 
-.feat-p:hover{
+.feat-p:hover {
   border-bottom: 5px hsl(0, 94%, 66%) solid;
   border-bottom-width: auto;
   cursor: pointer;
-} 
+}
 
-.feat-p:active{
+.feat-p:active {
   border-bottom: 5px hsl(0, 94%, 66%) solid;
   border-bottom-width: auto;
   cursor: pointer;
-} 
+}
 
 .highlighted-tiltes div:first-child {
-  border-top: solid hsla(229, 8%, 60%, 0.349) 1px; 
-} 
+  border-top: solid hsla(229, 8%, 60%, 0.349) 1px;
+}
 .highlighted-tiltes div {
-  border-bottom: solid hsla(229, 8%, 60%, 0.349)  1px;
+  border-bottom: solid hsla(229, 8%, 60%, 0.349) 1px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -189,7 +192,6 @@ header {
   width: 85%;
   margin-bottom: 20%;
 }
-
 
 .features > div h3 {
   text-align: center;
@@ -212,8 +214,7 @@ header {
   bottom: 33%;
   border-radius: 0 0 115px 0;
   left: -21%;
- 
- }
+}
 
 .small-heading {
   font-size: 1.5rem;
@@ -232,7 +233,7 @@ header {
 
 */
 
-.tb  {
+.tb {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,13 +241,15 @@ header {
   margin-bottom: 35%;
 }
 
+.features-button {
+  display: none;
+}
 
 .simpleBookmarking {
   display: flex;
 }
 
-
-.speedysearch  {
+.speedysearch {
   display: none;
 }
 
@@ -282,13 +285,13 @@ header {
   margin-bottom: 15%;
   border: none;
   border-radius: 20px;
-  box-shadow: 0px 8px 12px hsla(229, 8%, 60%, 0.5) ;
+  box-shadow: 0px 8px 12px hsla(229, 8%, 60%, 0.5);
 }
 
 .card > img:first-of-type {
   margin: 35px 0;
 }
-.card h3  {
+.card h3 {
   margin-bottom: 15px;
   font-weight: 500;
 }
@@ -296,7 +299,7 @@ header {
   margin-bottom: 40px;
 }
 
-.card > img:last-of-type{
+.card > img:last-of-type {
   margin-bottom: 20px;
 }
 .card button {
@@ -305,12 +308,7 @@ header {
   margin-bottom: 30px;
 }
 
-
-
 /* Frequently Asked  */
-
-
-
 
 .frequently-asked {
   display: flex;
@@ -329,10 +327,9 @@ header {
 
 .frequently-asked > p {
   text-align: center;
-  padding: 0  30px;
+  padding: 0 30px;
   margin-bottom: 16%;
 }
-
 
 .faq-container {
   /* border: solid black 1px; */
@@ -345,9 +342,6 @@ header {
   font-size: 0.9rem;
   display: none;
 }
-
-
-
 
 .dropdown {
   border-bottom: solid 1px hsla(229, 8%, 60%, 0.5);
@@ -366,7 +360,7 @@ header {
   background-color: #fff;
   cursor: pointer;
 }
-.dropdown > img  {
+.dropdown > img {
   height: 11px;
 }
 
@@ -375,7 +369,7 @@ header {
 }
 .frequently-asked > button {
   background-color: hsl(231, 69%, 60%);
-  color:#fff;
+  color: #fff;
 }
 
 /* Stay-updated-form */
@@ -388,31 +382,29 @@ header {
   margin-top: 30%;
   background-color: hsl(231, 69%, 60%)
 } */
-.form-container p{
- letter-spacing: 3px;
- font-size: 0.8rem;
- text-align: center;
- margin-bottom: 3%;
+.form-container p {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 3%;
 }
 .form-container h3 {
- text-align: center;
- padding: 0 50px;
- font-weight: 500;
- margin-bottom: 10%;
+  text-align: center;
+  padding: 0 50px;
+  font-weight: 500;
+  margin-bottom: 10%;
 }
-.form-container p, h3 {
+.form-container p,
+h3 {
   color: #fff;
 }
 
 #emailForm {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
 
 #emailForm > div {
   width: 80%;
@@ -421,15 +413,11 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   margin-bottom: 5%;
-
 }
-
 
 #emailForm > div:last-of-type {
-margin-bottom: 10%;
+  margin-bottom: 10%;
 }
-
-
 
 #incorrectEmail {
   font-size: 0.5rem;
@@ -457,7 +445,6 @@ input[type="submit"] {
   margin: 0;
 }
 
-
 /* Footer */
 
 footer {
@@ -466,11 +453,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
-
-footer > div:first-of-type{
+footer > div:first-of-type {
   padding-top: 10%;
   margin-bottom: 5%;
 }
@@ -488,11 +473,10 @@ footer > p:last-of-type {
 }
 
 .socials {
-display: flex;
-width: 50%;
-justify-content: space-evenly;
-margin-bottom: 10%;
-
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
 }
 
 .attribution {
@@ -503,4 +487,327 @@ margin-bottom: 10%;
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries*/
+
+@media (min-width: 1440px) {
+  /* HEADING / NAV */
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    width: 50%;
+    display: block;
+  }
+
+  nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  ul > li > button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  header > img:first-of-type {
+    margin-right: 15%;
+  }
+
+  header > img:last-of-type {
+    display: none;
+  }
+
+  /* Bookmark Manager */
+  .bookmarkManger {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+  }
+
+  .bookmark-manager-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+    align-items: start;
+  }
+
+  .background-color {
+    height: 45vh;
+    background-color: hsl(231, 69%, 60%);
+    width: 34%;
+    border-radius: 0 0 0 115px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 31%;
+  }
+
+  .bookmarkManger img {
+    width: 45%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .bookmarkManger h1 {
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  .bookmarkManger p {
+    padding: 0% 0%;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  /* Features */
+
+  .features > p:first-of-type {
+    text-align: center;
+    padding: 0 35%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .highlighted-tiltes {
+    flex-direction: row;
+    margin-bottom: 5%;
+    width: 50%;
+  }
+
+  .highlighted-tiltes div:first-child {
+    border-top: none;
+  }
+
+  .tb {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10%;
+  }
+
+  .features > div img {
+    width: 38%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+  }
+
+  .features-container > p:last-of-type {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .background-colorR {
+    height: 40vh;
+    background-color: hsl(231, 69%, 60%);
+    width: 62%;
+    position: absolute;
+    z-index: -1;
+    bottom: 17%;
+    border-radius: 0 0 115px 0;
+    left: -21%;
+  }
+
+  .small-heading {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+
+  .features-container {
+    width: 30%;
+    text-align: left;
+  }
+
+  .features-button {
+    display: block;
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+  }
+
+  /* Extension */
+
+  .extensions {
+    margin-bottom: 0%;
+  }
+
+  .extensions > h2 {
+    font-size: 2.1rem;
+  }
+
+  .extensions > p {
+    padding: 0 30%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .card-format {
+    display: flex;
+    width: 66%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cd1 {
+    margin-top: 8%;
+  }
+
+  .cd2 {
+    margin-top: 18%;
+  }
+
+  /* FAQs */
+  .frequently-asked {
+    margin-bottom: 10%;
+  }
+
+  .frequently-asked > h2 {
+    font-size: 2.1rem;
+  }
+
+  .frequently-asked > p {
+    font-size: 1.2rem;
+    padding: 0 30%;
+    margin-bottom: 3%;
+  }
+
+  .faq-container {
+    width: 36%;
+  }
+
+  .frequently-asked > .faq-container:first-of-type {
+    border-top: solid 1px hsla(229, 8%, 60%, 0.5);
+  }
+
+  .dropdown > p {
+    font-size: 1.1rem;
+  }
+
+  .frequently-asked > .faq-container:last-of-type {
+    margin-bottom: 3%;
+  }
+
+  /* Stay-updated-form */
+
+  .form-container {
+    padding-top: 5%;
+  }
+
+  .form-container p {
+    font-size: 0.9rem;
+  }
+
+  .form-container h3 {
+    font-size: 2.5rem;
+    padding: 0 30%;
+  }
+
+  #emailForm {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #emailForm > div {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    margin-right: 0.5%;
+  }
+
+  #emailForm > div:last-of-type {
+    margin-bottom: 4%;
+    width: 10%;
+  }
+
+  #incorrectEmail {
+    font-size: 0.5rem;
+    display: none;
+    background-color: hsl(0, 94%, 66%);
+    padding: 5px 0px;
+    width: 86%;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  input[type="email"] {
+    width: 90%;
+    padding: 20px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    /* border: hsl(0, 94%, 66%) 2px solid; */
+  }
+
+  input[type="submit"] {
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+    font-weight: 500;
+    width: 86%;
+    margin: 0;
+    padding: 20px 12px;
+  }
+
+  /* Footer */
+
+  footer {
+    background-color: hsl(229, 31%, 21%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  footer > div:first-of-type {
+    padding-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  footer > p {
+    margin-bottom: 0%;
+    text-transform: uppercase;
+    color: #ffffffa4;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    padding: 2.5% 0;
+    
+  }
+
+  footer > p:last-of-type {
+    margin-bottom: 0%;
+    margin-right: 20%;
+  }
+
+  .socials {
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+  }
+
+  .attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
