@@ -69,14 +69,14 @@ header {
 /* Bookmark Manager */
 
 .background-color {
-  height: 23vh;
+  height: 20vh;
   background-color: hsl(231, 69%, 60%);
-  width: 90%;
+  width: 80%;
   border-radius: 0 0 0 115px;
   position: absolute;
   z-index: -1;
   right: 0;
-  top: 24%;
+  bottom: 59%;
 }
 
 .bookmarkManger {
@@ -85,6 +85,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 30%;
+  position: relative;
 }
 
 .bookmark-manager-container {
@@ -98,9 +99,8 @@ header {
 } */
 
 .bookmarkManger img {
-  width: 100%;
-  margin-bottom: 25%;
-  position: relative;
+  width: 85%;
+  margin-bottom: 10%;
 }
 .bookmarkManger h1 {
   font-size: 2rem;
@@ -206,7 +206,7 @@ header {
 }
 
 .background-colorR {
-  height: 23vh;
+  height: 20%;
   background-color: hsl(231, 69%, 60%);
   width: 90%;
   position: absolute;
@@ -544,16 +544,7 @@ footer > p:last-of-type {
     align-items: start;
   }
 
-  .background-color {
-    height: 45vh;
-    background-color: hsl(231, 69%, 60%);
-    width: 34%;
-    border-radius: 0 0 0 115px;
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    top: 31%;
-  }
+
 
   .bookmarkManger img {
     width: 45%;
@@ -610,7 +601,7 @@ footer > p:last-of-type {
     margin-bottom: 20px;
   }
   .background-colorR {
-    height: 40vh;
+    height: 40%;
     background-color: hsl(231, 69%, 60%);
     width: 62%;
     position: absolute;
@@ -810,4 +801,69 @@ footer > p:last-of-type {
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
 }
+
+
+/* Media Queries for the blue background */
+
+
+  @media (min-width:375px) {
+
+    .background-color {
+    height: 34%;
+    background-color: hsl(231, 69%, 60%);
+    width: 80%;
+    border-radius: 0 0 0 115px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 56%;
+    }
+    
+  } 
+
+
+  @media (min-width:425px) {
+
+    .background-color {
+    height: 34%;
+    background-color: hsl(231, 69%, 60%);
+    width: 80%;
+    border-radius: 0 0 0 115px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 53%;
+    }
+  
+  }
+
+
+  @media (min-width:768px) {
+
+    .background-color {
+    height: 46%;
+    background-color: hsl(231, 69%, 60%);
+    width: 90%;
+    border-radius: 0 0 0 115px;
+    position: absolute;
+    z-index: -1;
+    right: -8%;
+    bottom: 35%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .background-color {
+      height: 45%;
+      background-color: hsl(231, 69%, 60%);
+      width: 34%;
+      border-radius: 0 0 0 115px;
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 31%;
+    }
+  }
+  
