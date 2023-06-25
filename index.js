@@ -51,10 +51,33 @@ easySharing.addEventListener("click", () => {
 
 //Reference to the FAQ's
 
-// const arrow = document.querySelector('.dropdown > img');
+const arrows = document.querySelectorAll('.arrow');
+const bookmark = document.getElementById('bookmarkkk');
+const newBrowser = document.getElementById('newBrowser');
+const mobileApp = document.getElementById('mobileApp');
+const chromiumBrowsers = document.getElementById('chromiumBrowsers');
 
-// arrow.addEventListener('click', () => {
-// });
+arrows.forEach((arrow) => {
+  arrow.addEventListener('click', () => {
+    arrow.classList.toggle('rotate');
+
+    if (arrow.parentElement.nextElementSibling === bookmark) {
+      bookmark.style.display = bookmark.style.display === 'block' ? 'none' : 'block';
+    } else if (arrow.parentElement.nextElementSibling === newBrowser) {
+      newBrowser.style.display = newBrowser.style.display === 'block' ? 'none' : 'block';
+    } else if (arrow.parentElement.nextElementSibling === mobileApp) {
+      mobileApp.style.display = mobileApp.style.display === 'block' ? 'none' : 'block';
+    } else if (arrow.parentElement.nextElementSibling === chromiumBrowsers) {
+      chromiumBrowsers.style.display = chromiumBrowsers.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
+
+
+
+
+
+//Reference to the Form
 
 const emailInput = document.getElementById("email");
 const incorrectEmailMessage = document.getElementById("incorrectEmail");
@@ -71,3 +94,10 @@ emailInput.addEventListener("input", function () {
     incorrectEmailMessage.style.display = "flex";
   }
 });
+
+
+
+
+
+
+

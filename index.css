@@ -448,9 +448,19 @@ header {
   font-size: 0.9rem;
   display: none;
 }
-#RQ {
-  display: block;
+
+/* id's for the drop downs */
+#bookmarkkk,
+#newBrowser,
+#mobileApp,
+#chromiumBrowsers {
+  display: none;
 }
+
+.rotate {
+  transform: rotate(180deg);
+}
+
 
 .dropdown {
   border-bottom: solid 1px hsla(229, 8%, 60%, 0.5);
