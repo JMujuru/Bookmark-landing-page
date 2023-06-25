@@ -6,19 +6,12 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+Building a simple webiste the vanilla Js CSS and Html
 
 ### The challenge
 
@@ -30,18 +23,10 @@ Users should be able to:
   - The input field is empty
   - The email address is not formatted correctly
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-
-
 ### Links
 
 - Solution URL: [https://github.com/JMujuru/Bookmark-landing-page.github.io-/]
 - Live Site URL: [https://jmujuru.github.io/Bookmark-landing-page.github.io-/]
-
-## My process
 
 ### Built with
 
@@ -51,18 +36,9 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-### What I learned
-
-
-### Continued development
-
-
-### Useful resources
-
-
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@JMujuru](https://www.frontendmentor.io/profile/JMujuru)
 
-## Acknowledgments
+
