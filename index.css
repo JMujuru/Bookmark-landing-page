@@ -832,6 +832,7 @@ footer > p:last-of-type {
   .form-container h3 {
     font-size: 2.5rem;
     padding: 0 30%;
+    margin-bottom: 2%;
   }
 
   #emailForm {
