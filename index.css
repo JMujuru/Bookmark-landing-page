@@ -55,20 +55,71 @@ p {
   color: hsl(229, 8%, 60%);
 }
 
-/* Header */
+/* Overlay */
 
 .container {
   position: relative;
 }
 
-/* .overlay {
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: hsl(228, 45%, 44%);
+  background-color: hsl(229, 31%, 21%);
   z-index: 2;
-  opacity: 0.6;
-} */
+  opacity: 0.9;
+  padding: 30px 30px 0px 30px;
+  display: none;
+}
+
+
+.overlayHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83.5%;
+  margin-bottom: 10%;
+}
+
+
+.overlayList {
+  border-top: solid 1px #fff;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayList p {
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff; 
+  letter-spacing: 2px;
+}
+
+.overlay p:last-of-type {
+  margin-bottom: 5%;
+}
+
+.overlayList button {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  background-color: hsl(229, 31%, 21%);
+  border: solid 2px #fff;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+
+}
+
+header > img {
+  display: block;
+}
+
+
+/* Header */
 
 
 nav {
@@ -98,6 +149,8 @@ header {
   margin: 0px 0px 60px 0px;
   padding: 30px 30px 0px 30px;
 }
+
+
 
 /* Bookmark Manager */
 
