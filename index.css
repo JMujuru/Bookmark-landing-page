@@ -448,6 +448,9 @@ header {
   font-size: 0.9rem;
   display: none;
 }
+#RQ {
+  display: block;
+}
 
 .dropdown {
   border-bottom: solid 1px hsla(229, 8%, 60%, 0.5);
@@ -460,6 +463,8 @@ header {
   color: black;
   font-size: 0.9rem;
 }
+
+
 
 .dropdown > p:hover {
   cursor: pointer;
@@ -474,6 +479,7 @@ header {
 .frequently-asked > .faq-container:last-of-type {
   margin-bottom: 10%;
 }
+
 .frequently-asked > button {
   background-color: hsl(231, 69%, 60%);
   color: #fff;
