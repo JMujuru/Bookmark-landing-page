@@ -480,13 +480,9 @@ header {
 
 .dropdown > img {
   height: 11px;
+  cursor: pointer;
 }
 
-.dropdown > img:hover {
-  transform: rotate(180deg);
-  cursor: pointer;
-  color: hsl(0, 94%, 66%);
-}
 
 .frequently-asked > .faq-container:last-of-type {
   margin-bottom: 10%;
